@@ -1,0 +1,14 @@
+#include <arduino.h>
+
+#define pinLed 3
+
+void setup()
+{
+  Serial.beign(115000);
+  pinMode(pinLed, OUTPUT);
+}
+
+void loop()
+{
+ digitalWrite(pinLed, HIGH);
+}
