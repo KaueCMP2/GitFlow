@@ -1,0 +1,14 @@
+#define pinLed 3
+
+void setup() {
+  pinMode(pinLed,OUTPUT);
+}
+
+void loop() {
+  static bool estadoLed = false;
+  static unsigned long tempo = millis();
+  if(tempo - tempoAnterior >= 50)
+    estadoLed != estadoLed;
+  digitalWrite(pinLed,estadoLed);
+  tempoAnterior = tempo;
+}
